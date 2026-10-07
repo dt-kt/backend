@@ -13,7 +13,7 @@ class AddNameToBackendUsersTable extends Migration {
     public function up()
     {
         Schema::table('backend_users', function(Blueprint $table) {
-            $table->string('name');
+            $table->string('name')->default('');
         });
     }
 
